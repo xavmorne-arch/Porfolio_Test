@@ -1,6 +1,6 @@
-// Load navigation from nav.html into the element with id="nav-container"
+// Load navigation from nav.html into the element with id="nav-container_project"
 document.addEventListener('DOMContentLoaded', function() {
-  fetch('nav.html')
+  fetch('../../nav_project.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('nav-container').innerHTML = data;

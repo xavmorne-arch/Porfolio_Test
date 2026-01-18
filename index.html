@@ -5,23 +5,14 @@
 <head>
   <title>Xavier Morneau</title>
   <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="project_galerie.css"> <!-- Lien vers le fichier CSS pour la galerie de projets -->
   <script src="load-nav.js"></script>
 </head>
 
 <!--Cette section gere le contenu de la page-->
 <body>
 
-<div id="nav-container"></div>
-
-
-
-<script>
-document.querySelectorAll("ul a").forEach(link => {
-  if (link.href === window.location.href) {
-    link.classList.add("active");
-  }
-});
-</script>
+<div id="nav-container"></div><script src="load-nav.js"></script>
 
 
 
@@ -32,38 +23,31 @@ document.querySelectorAll("ul a").forEach(link => {
 
 
 <h1>
-  Bienvenue sur ce site!!</h1>
-<p>Je m’appelle Xavier Morneau.</p>
-<pre>
-  Je suis étudiant en génie mécanique à l’université de Sherbrooke.
-  Je suis actuellement en train d’apprendre les bases de HTML en faisant ce portfolio.
-</pre>
+Bonjour et Bienvenue sur mon Porfolio/projet de la fin de semaine.</h1>
+<p>Je m’appelle Xavier Morneau et je suis étudiant en génie mécanique à l’université de Sherbrooke. Si vous visionner ce site c’est probablement puisque j’ai appliqué sur votre offre de stage.
+ Je vous invite donc à visiter les différentes sections de mon portfolio pour en apprendre plus sur moi et mes compétences.
+</p>
 <hr> <!--Ligne horizontale de séparation-->
 
 <!-- Cette Section Contient les tests actuel dans mon aprentissage-->
-<h2> Section de tests</h2>
-<p> Voir le projet de <a href="soudure.html"> soudure</a>.</p>
+<h2> Ne faites pas trop attention aux textes de la section à propos qui sont actuellement générés par IA.</h2>
+<h2 style="color:antiquewhite"> À ma défense j’ai commencé à apprendre le HTML et le CSS vendredi soir [16/01/2026]</h2>
+<p>Et j’ai choisi de ne pas faire usage de gabarit préfabriqué afin de mieux comprendre le fonctionnement et les possibilités de ce langage. Tout ce que vous retrouverez sur ce site a donc été appris et appliqué dans l’espace de 3 jours. Je ne prétends pas du tout être un codeur hors de l’ordinaire. Cependant, je sais que je dispose d’une grande capacité et autonomie d’apprentissage ce qui me permet de m’adapter rapidement à tout nouveau défi.  </p>
 
+<hr>
 
-<h3
-title="Je suis un titre"> <!-- S'afiche lorsque on passe la souris au dessus du titre.-->
-  Hehe Car go <strong>VROOOOMMMM!!</strong>
-</h3>
-
-    <img src="images/Test/Casque_Soudure_Frame_Vintage.jpg" 
-    alt="Soudeur fierement assis dans le frame qu'il a souder."
-    usemap="#CasqueSoudureMap"
-    style="width:400px;">
-    <map name="CasqueSoudureMap">
-      <area shape="poly" coords="504,636,536,756,567,827,614,895,661,923,716,939,729,897,737,863,750,848,818,829,826,800,839,753,844,709,841,589,828,552,792,492,758,461,700,437,638,435,591,443,544,463,512,492,494,516,494,568,489,586,483,610" href="https://www.wikipedia.com">
-      <area shape="rect" coords="0,0,100,100" href="images/Test/Casque_Soudure_Frame_Vintage.jpg" alt="Zone rectangulaire">
-    </map>
-
-<h3
-  title="Je suis un autre titre">
-  Maintenant une image et dce une video voir 
-</h3>
-
+    <div class="image-crop">
+    <div class="project_image-container">
+      <a href="images/Test/Casque_Soudure_Frame_Vintage.jpg">
+        <img src="images/Test/Casque_Soudure_Frame_Vintage.jpg"
+        alt="Trophee Lefty Loosey Righty Tighty">
+      </a>
+      <div class="project_image-info"  style="background-color: rgba(0, 0, 0, 0.70);">
+        <h4>HeHe Car Go VROOOOOMMMMM!!!</h4>
+        <p>Il est important de ne pas toujours se prendre au sérieux. Surtout quand on s’amuse.</p>
+      </div>
+    </div>
+  </div>
 
 
 

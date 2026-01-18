@@ -5,61 +5,78 @@
   <title>Project Gallery</title>
   <link rel="stylesheet" href="index.css"> <!-- Lien vers le fichier CSS principal -->
   <link rel="stylesheet" href="project_galerie.css"> <!-- Lien vers le fichier CSS pour la galerie de projets -->
-  <script src="load-nav.js"></script>
+  
 </head>
 
 <body>
 
-<div id="nav-container"></div>
-<script>
-document.querySelectorAll("ul li a").forEach(link => {
-  if (link.href === window.location.href) {
-    link.classList.add("active");
-  }
-});
-</script>
+<div id="nav-container"></div><script src="load-nav.js"></script>
+
+<h1>
+    Galerie de projets <i>{liste non exhaustive}</i>
+</h1>
+
+<p>
+    Voici une galerie de quelques projets que j'ai réalisés par le passé.
+</p>
 
 
 <!-- Cette section contient les different element de la galerie de project-->
 <div class = "project-gallery">
-
-  <div class="image-crop">
+  
+  
+    <div class="image-crop">
     <div class="project_image-container">
-      <a href="images/Test/Lefty_Loosey/Lefty_Tighty_Trophy.jpg">
-        <img src="images/Test/Lefty_Loosey/Lefty_Tighty_Trophy.jpg"
-        alt="Trophee Lefty Loosey Righty Tighty">
+      <a href="Project/SteeringRackProject/SteeringRackProject.html">
+          <img src="Project/SteeringRackProject/Images/SteeringRack1.jpg"
+          alt="Steering Rack Project">
       </a>
-      <div class="project_image-info">
-        <h4>Projet de Machinage</h4>
-        <p>Trophée rapel que la vis du crankshaft est un filet a gauche et non a droite.</p>
+      <div class="project_image-info" style="background-color: rgba(0, 0, 0, 0.5)">
+        <h4>Steering Rack pour formule SAE 2025</h4>
+        <p>Conception et fabrication du système de direction pour une voiture de formule SAE.
+            <br> Reduction de 43% de la masse comparativement au modèle précédent. Tout en améliorant la rigidité et éliminant le jeu.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="image-crop">
+    <div class="project_image-container">
+      <a href="Project/InjectionMoldProject/InjectionMoldProject.html">
+        <img src="Project/InjectionMoldProject/Pieces.jpg"
+        alt="Moule d'injection de plastique Lego">
+      </a>
+      <div class="project_image-info" style="background-color: rgba(0, 0, 0, 0.7)">
+        <h4>Moule d'injection de plastique <i>Lego</i> [3e année TGM Limoilou]</h4>
+        <p>Un moule d'injection de plastique pour fabriquer des pièces de type Lego.</p>
       </div>
     </div>
   </div>
 
   <div class="image-crop">
     <div class="project_image-container">
-      <img src="images/Test/Lefty_Loosey/Lefty_Tighty_Trophy.jpg"
-      alt="Trophee Lefty Loosey Righty Tighty">
-      <div class="project_image-info">
-        <h4>Projet de Machinage</h4>
-        <p>Trophée rapel que la vis du crankshaft est un filet a gauche et non a droite.</p>
-      </div>
-    </div>
-  </div> 
-
-  <div class="image-crop">
-    <div class="project_image-container">
-      <img src="images/Test/Lefty_Loosey/Lefty_Tighty_Trophy.jpg"
-      alt="Trophee Lefty Loosey Righty Tighty">
-      <div class="project_image-info">
-        <h4>Projet de Machinage</h4>
-        <p>Trophée rapel que la vis du crankshaft est un filet a gauche et non a droite.</p>
+      <a href="Project/WoodGasStove/WoodGasStove.html">  
+        <div class="image-pair">
+          <img src="Project/WoodGasStove/Interne.jpg"
+          alt="Wood Gas Stove Internal View">
+          <img src="Project/WoodGasStove/Flame.gif"
+          alt="Flamme du Wood Gas Stove">
+        </div>
+      </a>
+      <div class="project_image-info" style="background-color: rgba(0, 0, 0, 0.5)">
+        <h4><i>Wood Gas Stove</i> demontable pour expedition de plein air [4e Secondaire]</h4>
+        <p>Un bruleur a gazéification de bois démontable pour faciliter le transport en expédition de plein air.</p>
       </div>
     </div>
   </div>
+
 
 
  </div>
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
  </body>
 </html>
