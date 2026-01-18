@@ -1,10 +1,18 @@
 body {
-    background-color: oklch(24.776% 0.00003 271.152);
+    margin: 0;
+    padding: 0;
+    background-color: oklch(18.674% 0.00002 271.152);
+    font-family:'Montserrat',sans-serif ; /* Set default font family */
+    color:oklch(.95 0 0); /* Set default text color */
 }   
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 10px;   /* Add margin to all headings and paragraphs */
+}
+
 
 h1 {
     color: oklch(.95 0 0);
-    font-family: Arial;
     text-align: center;
 }
 
@@ -18,9 +26,35 @@ h3 {
 }
 
 p{
-    font-family: 'Courier New';;
     color: oklch(.7 0 0);}
 
 strong {
     color: oklch(34.953% 0.13326 27.714);
+}
+
+
+/* Horizontal Navbar styles */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #111111;
 }

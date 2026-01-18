@@ -1,0 +1,78 @@
+/* Image crop styles - crop height to max, expand on hover */
+.image-crop {
+  overflow: hidden;
+  display: inline-block;
+  max-height: 250px;
+  transition: max-height 0.4s;
+}
+
+.image-crop:hover {
+  max-height: 1000px;
+  transition: max-height 0.4s;
+}
+
+.image-crop img {
+  display: block;
+  width: 100%;
+}
+
+
+
+
+/* Image container styles */
+
+.project-gallery {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+
+.project_image-container {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+}
+
+.project_image-container img {
+  width: 90%;
+  max-width: 600px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+
+.project_image-info {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: oklch(.95 0 0); /* Text color */
+  margin: 10px;
+  padding: 15px;
+  text-align: left;
+}
+
+.project_image-container:hover img {
+    filter: brightness(0.6);
+    transition: filter 0.3s ease;
+}
+
+.project_image-container:hover .project_image-info {
+    display: block;
+}
+.project_image-info h4 {
+    margin: 0 0 8px 0;
+    font-size: 16px;
+    font-family:'Montserrat',sans-serif ;
+}
+.project_image-info p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+    font-family:'Montserrat',sans-serif ;
+
+}
