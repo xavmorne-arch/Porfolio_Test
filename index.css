@@ -36,7 +36,13 @@ p{
   color: oklch(.7 0 0);
   text-align: justify;
 }
-    
+
+pre{
+  color: oklch(.7 0 0);
+  text-align: justify;
+  font-size: 14px;
+  margin-left: 80px;
+}
 
 strong {
     color: oklch(34.953% 0.13326 27.714);
