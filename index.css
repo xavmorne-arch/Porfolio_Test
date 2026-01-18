@@ -58,3 +58,7 @@ ul li a {
 ul li a:hover {
   background-color: #111111;
 }
+
+ul li a.active {
+  background-color: oklch(34.953% 0.13326 27.714);
+}
