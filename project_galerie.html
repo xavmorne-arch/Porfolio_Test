@@ -11,7 +11,13 @@
 <body>
 
 <div id="nav-container"></div>
-
+<script>
+document.querySelectorAll("ul.nav-container a").forEach(link => {
+  if (link.href === window.location.href) {
+    link.classList.add("active");
+  }
+});
+</script>
 
 
 <!-- Cette section contient les different element de la galerie de project-->

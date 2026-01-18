@@ -5,9 +5,7 @@
 <head>
   <title>Xavier Morneau</title>
   <link rel="stylesheet" href="index.css">
-
-
-
+  <script src="load-nav.js"></script>
 </head>
 
 <!--Cette section gere le contenu de la page-->
@@ -17,7 +15,13 @@
 
 
 
-
+<script>
+document.querySelectorAll("ul a").forEach(link => {
+  if (link.href === window.location.href) {
+    link.classList.add("active");
+  }
+});
+</script>
 
 
 

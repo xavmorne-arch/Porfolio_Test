@@ -4,13 +4,20 @@
   <title>Steering Rack Project</title>
   <link rel="stylesheet" href="index.css"> <!-- Lien vers le fichier CSS principal -->
   <link rel="stylesheet" href="projects.css"> <!-- Lien vers le fichier CSS pour la galerie de projets -->
+  <script src="load-nav.js"></script>
 </head>
 
 <body>
 
+<div id="nav-container"></div>
+<script>
+document.querySelectorAll("ul.nav-container a").forEach(link => {
+  if (link.href === window.location.href) {
+    link.classList.add("active");
+  }
+});
+</script>
 
 
 
-
-    
 </body>
